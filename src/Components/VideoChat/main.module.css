@@ -12,20 +12,20 @@
 }
 
 .local {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  width: 35%;
+  width: 100%;
   height: auto;
 }
 
-.remoteVideo, .localVideo {
+.remoteVideo,
+.localVideo {
   width: 100%;
   height: auto;
 }
 
 .connect {
   position: absolute;
+  left: 0;
+  top: 50%;
 }
 
 .controls {
@@ -35,18 +35,22 @@
 }
 
 .overlay {
-  position: absolute;
-  top: 0;
+  position: relative;
+  margin: 0;
+  padding: 0;
   right: 0;
-  bottom: 0;
+  bottom: 34px;
   left: 0;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  align-items: flex-end;
 }
 
 .overlay h2 {
+  background-color: black;
   color: white;
+  height: 30px;
+  width: 100%;
+  font-size: medium;
 }
 
 img {
