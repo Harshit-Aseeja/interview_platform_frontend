@@ -139,12 +139,14 @@ class Editor extends Component {
     const code = this.state.editor.getValue();
     axios
       .post(serverURL + "/code/run", {
-        code,
+        code: code,
         input: this.state.input,
         id: this.props.match.params.id,
-        lang: this.state.editor.getModel().getLanguageIdentifier().language,
+        //lang: this.state.editor.getModel().getLanguageIdentifier().language,
+        lang: "cpp",
       })
       .then((response) => {
+        console.log("Output generated: " + response.data);
         this.state.binding._inoutListener(
           this.state.output,
           response.data,
