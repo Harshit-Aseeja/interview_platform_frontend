@@ -15,8 +15,9 @@ const HomeComponent = (props) => {
         <button className={`${styles.btn} btn_primary`}>Start Coding</button>
       </Link>
       <h4>
-        Since the backend is hosted on a free server, give it 50 seconds to
-        start up
+        The editor may take 30-50 seconds to start when loading for the first
+        time.<br></br> This is due to the backend being hosted on a free shared
+        server
       </h4>
     </div>
   );
